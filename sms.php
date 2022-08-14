@@ -24,7 +24,7 @@
             "pushSettings" => null
          ]));
         curl_setopt($curl, CURLOPT_HTTPHEADER, array(
-            'Authorization: Basic [base64_kapi_key]',
+            'Authorization: Basic [base64_api_key]',
             'Content-Type: application/json'
         ));
 
@@ -38,7 +38,7 @@
 
 
 	$phone = '90539xxxxxxx';
-	$content = 'Degerli musterimiz sevkiyatiniz dagitima cikarilmistir. FIRMA_ADI';
+	$content = 'Değerli müsterimiz sevkiyatınız dağıtıma çıkarılmıştır. FIRMA_ADI';
 
 	if(SendSMS($content, $orderGSM)){
 		echo "SMS başarı ile gönderildi!";
